@@ -34,7 +34,7 @@ class DNS {
 				}
 		}
 
-		public static function query( string $domainName, Type $type, ?string $useSpecificServer = null, $queryRecursionCounter = 0): DNSQueryResult {
+		public static function query( string $domainName, Type $type, ?string $useSpecificServer = null, $queryRecursionCounter = 0 ): DNSQueryResult {
 				$queryRecursionCounter ++;
 				if ( $queryRecursionCounter > 5 ) {
 						throw new RuntimeException( 'Too many recursions, something is wrong with the response from all nameservers' );
