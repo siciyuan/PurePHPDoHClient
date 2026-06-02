@@ -30,5 +30,6 @@
   "require": {
     "php": "^8.0",
     "ext-curl": "*"
+    "ljpc/pure-php-doh-client": "^1.0"
   }
 }
